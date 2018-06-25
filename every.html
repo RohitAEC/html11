@@ -1,0 +1,75 @@
+<html>
+  <body>
+    <p>Click the button to check wether every element in the array iis above 18 or not</p>
+    
+    <button onclick="myfunction()">Try it</button>
+
+    <p id='demo'></p>
+
+    <p id='demo2'></p>
+
+    <p id='demo3'></p>
+
+    <p id='demo4'></p>
+
+    <p id='demo5'></p>
+
+    <p id='demo6'></p>
+
+    <p id='demo7'></p>
+
+    <p id='demo8'></p>
+
+    <p id='demo10'></p>
+   
+     <script>
+        
+                var ages = [32,33,16,40];
+
+                function checkAdult(ag)  {
+                 
+                      return ag >= 18;
+                                           }
+                 function myfunction()  {
+                   
+                    document.getElementById('demo').innerHTML = ages.every(checkAdult);
+
+                    document.getElementById('demo2').innerHTML = ages.some(checkAdult);
+                
+                    document.getElementById('demo3').innerHTML = ages.filter(checkAdult);
+
+                    document.getElementById('demo4').innerHTML = ages.find(checkAdult);
+
+                    document.getElementById('demo5').innerHTML = ages.findIndex(checkAdult); 
+
+                    document.getElementById('demo6').innerHTML = ages.includes(32); 
+
+                    document.getElementById('demo7').innerHTML = 10<9; 
+                   
+                                             
+                       
+              
+                        var x1 = Boolean(0);
+                        var x2 = Boolean(1);
+                      
+                        var res = String(x1) + "<br>" + String(x2);
+
+                     document.getELementById('demo10').innerHTML = res;   
+
+                             }
+
+                     
+                     try {
+                            alert("welcome guest");
+                         }
+
+                     catch(err)  {
+
+                             document.getElementById('demo8').innerHTML = err.name + "<br>" + err.message;                                            
+
+                                  }        
+ 
+     </script>
+
+  </body>
+</html>

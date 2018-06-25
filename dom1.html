@@ -1,0 +1,36 @@
+<html>
+<body>
+  
+<p>Hello World</p>
+
+<p>Dom is very useful</p>
+
+<p>This example demonstrates the <b> getElementsByTagName</b> method
+
+<p id='demo1'></p>
+
+<pre>
+ <p id='demo2'>
+    This is text.
+    This is text.
+    This is text.
+    this is text.
+
+
+ </p>
+</pre>
+
+<input type='button' value='hide Text' onclick="document.getElementById('demo2').style.visibility='hidden'">
+<input type='button' value='Show Text' onclick = "document.getElementById('demo2').style.visibility = 'visible'">
+
+<script>
+
+var x = document.getElementsByTagName('p');
+
+document.getElementById('demo1').innerHTML = 'The first paragraph (index 0) is ' + x[1].innerHTML;
+
+
+
+</script>
+</body>
+</html>

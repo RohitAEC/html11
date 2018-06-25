@@ -1,0 +1,30 @@
+<HTML>
+
+<body>
+
+   <p> Use of javascript Array methods </p>
+   <p id="demo1"></p>
+   <p id="demo2"></p>
+    <p id="demo3"></p>
+</body>
+
+<script>
+
+var arr1=["rohit","Rahul","Aman"];
+var arr2=["Anup","Ankit","Pratik"];
+var arr3=["Vishal","Ketan"];
+ var sum=arr1.concat(arr2,arr3);
+ var sl=arr1.slice(1);
+  var sl1=arr2.slice(0,2);
+
+document.getElementById("demo1").innerHTML=arr1 + "<br>" + arr2 + "<br>" + sum;
+document.getElementById("demo2").innerHTML=sl;
+document.getElementById("demo3").innerHTML=sl1;
+
+
+</script>
+
+
+
+
+</html>

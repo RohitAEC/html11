@@ -1,0 +1,29 @@
+<html>
+ <body>
+   <p>Click the button to display a string as a hyperlink</p>
+   <p>Click the button to display strike method</p>
+   <button onclick="myfunc()">Try it</button>
+
+   <p id='demo1'></p>
+   <p id='demo2'></p>
+   <p id='demo3'></p>
+   <p id='demo4'></p>
+   <p id='demo5'></p>
+   <p id='demo6'></p>
+   <p id='demo7'></p>
+   <p id='demo8'></p>
+
+   <script>
+
+     function myfunc()  {
+                  
+                   var str="Free Web Building Tutorials!";
+                   var result=str.link("https://www.w3schools.com");
+                   document.getElementById("demo1").innerHTML=result;
+                   document.getElementById("demo2").innerHTML=str.strike();
+                   
+                        }
+
+   </script>
+ </body>
+</html>

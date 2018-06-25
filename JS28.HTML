@@ -1,0 +1,31 @@
+<HTML>
+  <BODY>
+   
+          <H3> A DEMONSTRATION OF VIDEO TAG </H3>
+
+          <VIDEO ID="myvideo" width='300' height='200' autostart>
+              <source src="C:\Users\rohit\Downloads\Jodi Teri Meri - Official Video - Jassi Gill - Desi Crew - Latest Song 2018 - Speed Records.mp4" type='video/mp4'>
+             
+              YOUR BROWSER WILL NOT SUPPORT THIS TYTPE OF VIDEO FORMAT
+          </VIDEO>
+         
+          <P>CLICK THE BUTTON TO GET THE DURATION OF VIDEO IN SECONDS.</P>
+
+          <button onclick="myfunction()">Try it</button>
+
+          <p id='demo'></p>
+          <p id='demo1'></p>
+
+        <script>
+               
+                  function myfunction()  {
+                            
+                              var str="HELLO WORLD!";
+                              var x=document.getElementById("myvideo").duration;
+                              document.getElementById("demo").innerHTML=x;
+                              document.getElementById("demo1").innerHTML=str.strike();
+
+                                         }
+        </script>
+  </BODY>
+</HTML>

@@ -1,0 +1,50 @@
+<html>
+  <body>
+    <h2>JavaScript inbuild functions</h2>
+
+    <button onclick="myFunction()">Try it</button>
+    <button onclick="myFunction1()">Try again</button>
+    <button onclick="myFunction2()">Try again n again</button>
+    <button onclick="myFunction3()">Try once more!</button>
+
+    <p id="demo"></p>
+    <p id="demo2">Please visit Microsoft</p>
+    <p id="demo3">Hello World!</p>
+    <p id="demo4">Hello World!</p>
+
+    <script>
+      
+        function myFunction() {
+               
+           var str = 'The rain in SPain stays mainly in the plain';
+           var res=str.match(/ain/g);
+         document.getElementById("demo").innerHTML=res;
+                     
+                              }
+
+         function myFunction1() {
+           
+              var str = document.getElementById("demo2").innerHTML;
+              var txt=str.replace("Microsoft","W3SCHOOLS");
+              document.getElementById("demo2").innerHTML=txt;
+ 
+                                }
+
+         function myFunction2() {
+           
+              var str = document.getElementById("demo3").innerHTML;
+              document.getElementById("demo3").innerHTML=str.toLowerCase();
+ 
+                                }
+
+         function myFunction3() {
+           
+              var str = document.getElementById("demo4").innerHTML;
+              document.getElementById("demo4").innerHTML=str.toUpperCase();
+ 
+                                }
+          
+                    
+     </script> 
+  <body>
+</html>
